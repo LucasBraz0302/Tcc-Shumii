@@ -184,7 +184,6 @@ header {
 }
 
 .curso-imagem {
-    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,26 +191,31 @@ header {
     font-weight: bold;
     color: white;
     object-fit: contain;
+    position: relative;
+    width: 100%;        
+    height: 300px;       
+    border-radius: 12px; 
+    overflow: hidden;
 }
 
-.curso-imagem-1{
-    background-image:url("/Shumii-main/image/Futsal.jpg.jpg") ;
+.curso-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.curso-imagem-2{
-    background-image:url("/Shumii-main/image/Volêi.jpg.jpg") ;
+
+
+.curso-imagem .faixa-branca {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 15px;
+  box-sizing: border-box;
 }
-.curso-imagem-3{
-    background-image:url("/Shumii-main/image/Artes.jpg.jpg") ;
-}
-.curso-imagem-4{
-    background-image:url("/Shumii-main/image/Inglês.jpg.jpg") ;
-}
-.curso-imagem-5{
-    background-image:url("/Shumii-main/image/Espanhol.jpg.jpg") ;
-}
-.curso-imagem-6{
-    background-image:url("/Shumii-main/image/Teatro.jpg.jpg") ;
-}
+
 
 .curso-info {
     padding: 22px;
@@ -402,3 +406,4 @@ header {
         font-size: 30px;
     }
 }
+
